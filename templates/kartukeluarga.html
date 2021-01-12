@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/apple-icon.png') }}">
+  <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Sistem Pengelolaan Data Kelurahan Pademangan Barat
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/material-dashboard@2.1.0/assets/css/material-dashboard.css" rel="stylesheet" />
+
+</head>
+
+<body>
+      <br>
+      <div id="kk_header">
+          <table style="width:100%">
+            <tr>
+              <td width="30%">
+                <img src="images/garuda.png" style="max-width: 100px;height: auto">
+              </td>
+              <td width="40%">
+                <h3 align="center" id="kk_title"><b>KARTU KELUARGA</b></h3>
+                 <h5 align="center" id="kk_no"><b>No. 235235252352</b></h5>
+              </td>
+              <td width="30%">
+                &nbsp;
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">&nbsp;</td>
+            </tr>
+
+          </table>
+      </div>
+
+      <div id="kk_title">
+
+          <table style="width:100%">
+            <tr>
+              <td>Nama Kepala Keluarga</td>
+              <td id="kk_nama_kkel">: nama_kepala_keluarga</td>
+              <td width="30%">&nbsp;</td>
+              <td>Kecamatan</td>
+              <td id="kk_kecamatan">:  kecamatan</td>
+            </tr>
+
+            <tr>
+              <td>Alamat</td>
+              <td id="kk_alamat_kkel">:  alamat_kkel </td>
+              <td width="30%">&nbsp;</td>
+              <td>Kabupaten/Kota</td>
+              <td id="kk_kabupaten">:  kabupaten </td>
+            </tr>
+
+            <tr>
+              <td>RT/RW</td>
+              <td id="kk_rtrw">:  rt / rw </td>
+              <td width="30%">&nbsp;</td>
+              <td>Kode Pos</td>
+              <td id="kk_kodepos">:  kodepos </td>
+            </tr>
+
+            <tr>
+              <td>Desa/Kelurahan</td>
+              <td id="kk_desa">:  desa </td>
+              <td width="30%">&nbsp;</td>
+              <td>Provinsi</td>
+              <td id="kk_provinsi">:  provinsi </td>
+            </tr>
+          </table>
+
+      </div>
+
+      <div id="kk_content">
+          <br>
+          <table style="width:100%" id='tb_ini' border="1">
+              <tr align="center">
+                <td>No</td>
+                <td>Nama Lengkap</td>
+                <td>NIK</td>
+                <td>Jenis Kelamin</td>
+                <td>Tempat Lahir</td>
+                <td>Tanggal Lahir</td>
+                <td>Agama</td>
+                <td>Pendidikan</td>
+                <td>Jenis Pekerjaan</td>
+              </tr>
+              <tr align="center">
+                <td height="20"></td>
+                <td>(1)</td>
+                <td>(2)</td>
+                <td>(3)</td>
+                <td>(4)</td>
+                <td>(5)</td>
+                <td>(6)</td>
+                <td>(7)</td>
+                <td>(8)</td>
+              </tr>
+
+              <tr>
+                <td> no </td>
+                <td> nama_lengkap  </td>
+                <td> nik  </td>
+                <td> jk  </td>
+                <td> tmp_lahir  </td>
+                <td> tgl_lahir  </td>
+                <td> data_agama->agama  </td>
+                <td> pendidikan_terakhir  </td>
+                <td> klmp_pekerjaan  </td>
+              </tr>
+          </table>
+      </div>
+
+      <div id="kk_footer">
+          <br>
+          <table style="width:100%" id='tb_ini2' border="1">
+              <tr align="center">
+                <td rowspan="2">No</td>
+                <td rowspan="2">Status Pernikahan</td>
+                <td rowspan="2">Status Hubungan Dalam Keluarga</td>
+                <td rowspan="2">Kewarganegaraan</td>
+                <td colspan="2">Dokumen Imigrasi</td>
+                <td colspan="2">Nama Orang Tua</td>
+              </tr>
+              <tr align="center">
+                <td>No. Paspor</td>
+                <td>No. KITAS/KITAP</td>
+                <td>Ayah</td>
+                <td>Ibu</td>
+              </tr>
+              <tr align="center">
+                <td></td>
+                <td>(9)</td>
+                <td>(10)</td>
+                <td>(11)</td>
+                <td>(12)</td>
+                <td>(13)</td>
+                <td>(14)</td>
+                <td>(15)</td>
+              </tr>
+
+              <tr>
+                <td> no </td>
+                <td>status_perkawinan</td>
+                <td> status_hubungan_keluarga  </td>
+                <td> kewarganegaraan </td>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+                <td> - </td>
+
+              </tr>
+
+          </table>
+          <br>
+          <?php $today = date("d-m-Y"); ?>
+          <table border="1" style="width: 100%">
+            <tr>
+              <td width="25%">Dikeluarkan Tanggal : {{ $today }}</td>
+              <td width="25%">&nbsp;</td>
+              <td align="center" width="25%">KEPALA KELUARGA</td>
+              <td align="center" width="25%">CAMAT</td>
+            </tr>
+            <tr>
+              <td height="100" colspan="4"></td>
+            </tr>
+            <tr align="center">
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>{{ $kk->nama_kepala_keluarga }}<br>Tanda Tangan/Cap Jempol</td>
+              <td>{{ $desa->nama_camat }} <br> {{ $desa->nik_camat }}</td>
+            </tr>
+
+          </table>
+          <br>
+      </div>
+
+
+</body>
+
+</html>
+
