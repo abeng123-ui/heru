@@ -44,7 +44,7 @@
 
             @if($acl != 0)
             <li>
-                <a href="{{ url('/stok_barang') }}"> <i class="menu-icon fa fa-id-badge"></i>Data Stok ATK </a>
+                <a href="{{ url('/stok_barang') }}"> <i class="menu-icon fa fa-pencil-square"></i>Data Stok ATK </a>
             </li>
             @endif
 
@@ -86,7 +86,7 @@
 
             @if($acl != 0)
             <li>
-                <a href="{{ url('/pemasukan') }}"> <i class="menu-icon fa fa-bars"></i>Data Pemasukan ATK </a>
+                <a href="{{ url('/pemasukan') }}"> <i class="menu-icon fa fa-folder"></i>Data Pemasukan ATK </a>
             </li>
             @endif
 
@@ -100,7 +100,7 @@
 
             @if($acl != 0)
             <li>
-                <a href="{{ url('/pengeluaran') }}"> <i class="menu-icon fa fa-bars"></i>Data Pengeluaran ATK </a>
+                <a href="{{ url('/pengeluaran') }}"> <i class="menu-icon fa fa-briefcase"></i>Data Pengeluaran ATK </a>
             </li>
             @endif
 
@@ -114,7 +114,7 @@
 
             @if($acl != 0)
             <li>
-                <a href="{{ url('/pengguna') }}"> <i class="menu-icon fa fa-bars"></i>Data User </a>
+                <a href="{{ url('/pengguna') }}"> <i class="menu-icon fa fa-bullseye"></i>Data User </a>
             </li>
             @endif
 
@@ -128,7 +128,7 @@
 
             @if($acl != 0)
             <li>
-                <a href="{{ url('/role') }}"> <i class="menu-icon fa fa-bars"></i>Hak Akses User </a>
+                <a href="{{ url('/role') }}"> <i class="menu-icon fa fa-caret-square-o-up"></i>Hak Akses User </a>
             </li>
             @endif
 
@@ -142,7 +142,7 @@
 
             @if($acl != 0)
             <li>
-                <a href="{{ url('/permintaan/jurusan/cetak_bpp') }}"> <i class="menu-icon fa fa-book"></i>Cetak BPP </a>
+                <a href="{{ url('/permintaan/jurusan/cetak_bpp') }}"> <i class="menu-icon fa fa-desktop"></i>Cetak BPP </a>
             </li>
             @endif
 
