@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Sistem Pengelolaan Data Kelurahan Pademangan Barat'),
+    'name' => env('APP_NAME', 'Sistem Informasi Permintaan ATK'),
 
     /*
     |--------------------------------------------------------------------------
